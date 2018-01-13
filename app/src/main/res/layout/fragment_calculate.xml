@@ -12,5 +12,42 @@
         android:id="@+id/toolbarCalculate"/>
 
     <!--Content-->
+    <LinearLayout
+        android:padding="18dp"
+        android:layout_margin="25dp"
+        android:background="#b4ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Money-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_action_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--TextField-->
+            <EditText
+                android:hint="USD"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--Calculate-->
+        <Button
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </LinearLayout>
